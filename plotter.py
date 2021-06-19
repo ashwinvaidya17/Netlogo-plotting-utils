@@ -104,7 +104,7 @@ def plotter(const_list, remaining_list):
         flattened_name = ""
         for i in const_list:
             k, v = i
-            flattened_name += f"{k}_{list(v)[0]}"
+            flattened_name += f"{k}_{list(v)[0]}\n"
         for s_metric_val in second_metric:
             reporter_values = {}
             for k in reporters:
@@ -149,7 +149,7 @@ def plotter(const_list, remaining_list):
         flattened_name = ""
         for i in const_list:
             k, v = i
-            flattened_name += f"/{k}_{list(v)[0]}"
+            flattened_name += f"/{k}_{list(v)[0]}\n"
         reporter_values = {}
         for k in reporters:
             reporter_values[k] = []
